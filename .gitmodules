@@ -1,0 +1,3 @@
+[submodule "lazbase"]
+	path = lazbase
+	url = git@github.com:afrusrsc/lazbase.git

@@ -1,0 +1,58 @@
+# 适用于 pascal 开发的 .gitignore
+
+# 历史文件和自动备份文件
+__history/
+__recovery/
+backup/
+ConverterBackup/
+lib/
+*.bak
+*.~*
+*.*~
+
+# IDE 生成的本地文件
+*.local
+*.identcache
+*.stat
+*.skincfg
+*.tvsconfig
+*.lps
+
+# 中间编译文件
+*.dcu
+*.ddp
+*.compiled
+*.o
+*.or
+*.ppu
+*.dbg
+
+# 编译后的资源文件
+*.res
+*.dcr
+
+# 编译后的可执行文件
+*.exe
+*.a
+# Win
+*.dll
+# Linux
+*.so
+# Mac
+*.dylib
+
+# 日志
+log/
+logs/
+*.log
+
+# 图片
+*.bmp
+*.jpg
+*.png
+*.ico
+*.gif
+
+# 自定义
+bin/
+dcu/

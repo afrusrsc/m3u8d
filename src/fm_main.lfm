@@ -1,0 +1,104 @@
+object frmMain: TfrmMain
+  Left = 613
+  Height = 429
+  Top = 229
+  Width = 611
+  Caption = 'M3U8视频下载器'
+  ClientHeight = 429
+  ClientWidth = 611
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  Position = poMainFormCenter
+  LCLVersion = '3.6.0.0'
+  object btnRun: TButton
+    Left = 527
+    Height = 58
+    Top = 15
+    Width = 75
+    Anchors = [akTop, akRight]
+    Caption = '开始'
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnRunClick
+  end
+  object pb1: TProgressBar
+    Left = 64
+    Height = 20
+    Top = 112
+    Width = 458
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 3
+  end
+  object lblProgress: TLabel
+    Left = 527
+    Height = 17
+    Top = 113
+    Width = 19
+    Caption = '0/0'
+  end
+  object edtURL: TLabeledEdit
+    Left = 64
+    Height = 25
+    Top = 15
+    Width = 458
+    Anchors = [akTop, akLeft, akRight]
+    EditLabel.Height = 17
+    EditLabel.Width = 48
+    EditLabel.Caption = '下载地址'
+    LabelPosition = lpLeft
+    TabOrder = 0
+    TextHint = 'm3u8列表的下载地址'
+  end
+  object edtFile: TFileNameEdit
+    Left = 64
+    Height = 25
+    Top = 48
+    Width = 458
+    DialogKind = dkSave
+    DialogTitle = '保存'
+    Filter = 'mp4|*.mp4'
+    FilterIndex = 0
+    DefaultExt = 'mp4'
+    HideDirectories = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    Anchors = [akTop, akLeft, akRight]
+    MaxLength = 0
+    TabOrder = 1
+    TextHint = '本地保存的完整文件名'
+  end
+  object mmoLog: TMemo
+    Left = 8
+    Height = 274
+    Top = 144
+    Width = 594
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+  end
+  object lblFile: TLabel
+    Left = 13
+    Height = 17
+    Top = 50
+    Width = 48
+    Caption = '保存位置'
+  end
+  object ccbUseFFmpeg: TCheckBox
+    Left = 64
+    Height = 21
+    Top = 80
+    Width = 112
+    Caption = '使用FFmpeg生成'
+    TabOrder = 5
+  end
+  object ccbDebug: TCheckBox
+    Left = 200
+    Height = 21
+    Top = 80
+    Width = 66
+    Caption = '调试日志'
+    TabOrder = 6
+    OnChange = ccbDebugChange
+  end
+end

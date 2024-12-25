@@ -1,0 +1,30 @@
+# 特殊文件
+.gitignore      text    eol=lf
+.gitattributes  text    eol=lf
+.gitmodules     text    eol=lf
+
+# 换行符
+*.bat   text    eol=crlf
+*.reg   text    eol=crlf
+*.sh    text    eol=lf
+
+# 图片
+*.ico   binary
+*.jpg   binary
+*.bmp   binary
+*.png   binary
+*.gif   binary
+
+# 可执行文件
+*.exe   binary
+*.dll   binary
+*.a     binary
+*.so    binary
+*.dylib binary
+
+# 指定 GitHub 统计语言
+*.lpr   linguist-language=Pascal
+*.dpr   linguist-language=Pascal
+*.inc   linguist-language=Pascal
+*.pp    linguist-language=Pascal
+*.pas   linguist-language=Pascal
